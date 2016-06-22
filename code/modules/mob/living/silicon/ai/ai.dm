@@ -447,10 +447,10 @@ var/list/ai_verbs_hidden = list( // For why this exists, refer to https://xkcd.c
 	if (href_list["track"])
 		var/mob/target = locate(href_list["track"]) in mob_list
 
-		if(target && (!istype(target, /mob/living/carbon/human) || rhtml_decode(href_list["trackname"]) == target:get_face_name()))
+		if(target && (!istype(target, /mob/living/carbon/human) || html_decode(href_list["trackname"]) == target:get_face_name()))
 			ai_actual_track(target)
 		else
-			src << "\red System error. Cannot locate [rhtml_decode(href_list["trackname"])]."
+			src << "\red System error. Cannot locate [html_decode(href_list["trackname"])]."
 		return
 
 	return
