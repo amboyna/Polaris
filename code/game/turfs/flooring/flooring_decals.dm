@@ -75,6 +75,16 @@ var/list/floor_decals = list()
 /obj/effect/floor_decal/corner/paleblue/full
 	icon_state = "corner_white_full"
 
+/obj/effect/floor_decal/corner/darkblue
+	name = "dark blue corner"
+	color = "#4E5180"
+
+/obj/effect/floor_decal/corner/darkblue/diagonal
+	icon_state = "corner_white_diagonal"
+
+/obj/effect/floor_decal/corner/darkblue/full
+	icon_state = "corner_white_full"
+
 /obj/effect/floor_decal/corner/green
 	name = "green corner"
 	color = COLOR_GREEN_GRAY

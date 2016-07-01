@@ -41,20 +41,12 @@
 	icon_state = "armorsec"
 	item_state = "armor"
 
-/obj/item/clothing/suit/armor/vest/warden
-	name = "Warden's jacket"
-	desc = "An armoured jacket with silver rank pips and livery."
-	icon_state = "warden_jacket"
-	item_state = "armor"
+/obj/item/clothing/suit/armor/vest/overseer
+	name = "overseer's overcoat"
+	desc = "An overcoat with some armor. Perfect for NKVD basements, isn't it?"
+	icon_state = "overseercoat"
+	item_state = "overseercoat"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
-
-/obj/item/clothing/suit/armor/vest/warden/alt
-	name = "Warden's jacket"
-	desc = "An armoured jacket with silver rank pips and livery."
-	icon_state = "warden_alt"
-	item_state = "warden_alt"
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
-
 
 /obj/item/clothing/suit/armor/riot
 	name = "riot vest"
