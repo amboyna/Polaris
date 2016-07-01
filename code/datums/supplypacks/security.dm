@@ -12,26 +12,6 @@
 	group = "Security"
 	access = access_security
 
-/datum/supply_packs/randomised/security/armor
-	num_contained = 5
-	contains = list(
-			/obj/item/clothing/suit/storage/vest,
-			/obj/item/clothing/suit/storage/vest/officer,
-			/obj/item/clothing/suit/storage/vest/warden,
-			/obj/item/clothing/suit/storage/vest/hos,
-			/obj/item/clothing/suit/storage/vest/pcrc,
-			/obj/item/clothing/suit/storage/vest/detective,
-			/obj/item/clothing/suit/storage/vest/heavy,
-			/obj/item/clothing/suit/storage/vest/heavy/officer,
-			/obj/item/clothing/suit/storage/vest/heavy/warden,
-			/obj/item/clothing/suit/storage/vest/heavy/hos,
-			/obj/item/clothing/suit/storage/vest/heavy/pcrc
-			)
-
-	name = "Armor crate"
-	cost = 40
-	containertype = /obj/structure/closet/crate/secure
-	containername = "Armor crate"
 
 /datum/supply_packs/security/riot_gear
 	name = "Riot gear crate"
@@ -100,31 +80,6 @@
 	containername = "combat armor set crate"
 	access = access_armory
 
-/datum/supply_packs/security/tactical
-	name = "Tactical suits"
-	containertype = /obj/structure/closet/crate/secure
-	containername = "Tactical Suit Locker"
-	cost = 40
-	access = access_armory
-	contains = list(
-			/obj/item/clothing/under/tactical,
-			/obj/item/clothing/suit/armor/tactical,
-			/obj/item/clothing/head/helmet/tactical,
-			/obj/item/clothing/mask/balaclava/tactical,
-			/obj/item/clothing/glasses/sunglasses/sechud/tactical,
-			/obj/item/weapon/storage/belt/security/tactical,
-			/obj/item/clothing/shoes/jackboots,
-			/obj/item/clothing/gloves/black,
-			/obj/item/clothing/under/tactical,
-			/obj/item/clothing/suit/armor/tactical,
-			/obj/item/clothing/head/helmet/tactical,
-			/obj/item/clothing/mask/balaclava/tactical,
-			/obj/item/clothing/glasses/sunglasses/sechud/tactical,
-			/obj/item/weapon/storage/belt/security/tactical,
-			/obj/item/clothing/shoes/jackboots,
-			/obj/item/clothing/gloves/black
-			)
-
 /datum/supply_packs/security/securitybarriers
 	name = "Security barrier crate"
 	contains = list(/obj/machinery/deployable/barrier = 4)
@@ -158,7 +113,6 @@
 	name = "Security surplus equipment"
 	contains = list(
 			/obj/item/weapon/storage/belt/security = 3,
-			/obj/item/clothing/glasses/sunglasses/sechud = 3,
 			/obj/item/device/radio/headset/headset_sec/alt = 3,
 			/obj/item/clothing/suit/storage/hooded/wintercoat/security = 3
 			)
@@ -171,7 +125,6 @@
 	name = "Forensic investigation equipment"
 	contains = list(
 			/obj/item/weapon/storage/box/evidence = 2,
-			/obj/item/clothing/suit/storage/vest/detective,
 			/obj/item/weapon/cartridge/detective,
 			/obj/item/device/radio/headset/headset_sec,
 			/obj/item/taperoll/police,
@@ -214,149 +167,6 @@
 	containertype = "/obj/structure/closet/crate/secure"
 	containername = "Investigation clothing"
 	access = access_forensics_lockers
-
-/datum/supply_packs/security/officergear
-	name = "Officer equipment"
-	contains = list(
-			/obj/item/clothing/suit/storage/vest/officer,
-			/obj/item/clothing/head/helmet,
-			/obj/item/weapon/cartridge/security,
-			/obj/item/clothing/accessory/badge/holo,
-			/obj/item/clothing/accessory/badge/holo/cord,
-			/obj/item/device/radio/headset/headset_sec,
-			/obj/item/weapon/storage/belt/security,
-			/obj/item/device/flash,
-			/obj/item/weapon/reagent_containers/spray/pepper,
-			/obj/item/weapon/grenade/flashbang,
-			/obj/item/weapon/melee/baton/loaded,
-			/obj/item/clothing/glasses/sunglasses/sechud,
-			/obj/item/taperoll/police,
-			/obj/item/clothing/gloves/black,
-			/obj/item/device/hailer,
-			/obj/item/device/flashlight/flare,
-			/obj/item/clothing/accessory/storage/black_vest,
-			/obj/item/clothing/head/soft/sec/corp,
-			/obj/item/clothing/under/rank/security/corp,
-			/obj/item/weapon/gun/energy/taser,
-			/obj/item/device/flashlight/maglight
-			)
-	cost = 20
-	containertype = "/obj/structure/closet/crate/secure"
-	containername = "Officer equipment"
-	access = access_brig
-
-/datum/supply_packs/security/overseergear
-	name = "Overseer equipment"
-	contains = list(
-			/obj/item/clothing/suit/storage/vest/warden,
-			/obj/item/clothing/under/rank/warden,
-			/obj/item/clothing/under/rank/warden/corp,
-			/obj/item/clothing/suit/armor/vest/overseer,
-			/obj/item/clothing/head/helmet/overseer,
-			/obj/item/weapon/cartridge/security,
-			/obj/item/device/radio/headset/headset_sec,
-			/obj/item/clothing/glasses/sunglasses/sechud,
-			/obj/item/taperoll/police,
-			/obj/item/device/hailer,
-			/obj/item/clothing/accessory/badge/holo/warden,
-			/obj/item/weapon/storage/box/flashbangs,
-			/obj/item/weapon/storage/belt/security,
-			/obj/item/weapon/reagent_containers/spray/pepper,
-			/obj/item/weapon/melee/baton/loaded,
-			/obj/item/weapon/storage/box/holobadge,
-			/obj/item/clothing/head/beret/sec/corporate/warden,
-			/obj/item/device/flashlight/maglight
-			)
-	cost = 20
-	containertype = "/obj/structure/closet/crate/secure"
-	containername = "Warden equipment"
-	access = access_armory
-
-/datum/supply_packs/security/headofsecgear
-	name = "Head of security equipment"
-	contains = list(
-			/obj/item/clothing/head/helmet/secchief,
-			/obj/item/clothing/suit/storage/vest/hos,
-			/obj/item/clothing/under/rank/head_of_security/corp,
-			/obj/item/clothing/suit/armor/secchief,
-			/obj/item/clothing/head/helmet/secchief/dermal,
-			/obj/item/weapon/cartridge/hos,
-			/obj/item/device/radio/headset/heads/hos,
-			/obj/item/clothing/glasses/sunglasses/sechud,
-			/obj/item/weapon/storage/belt/security,
-			/obj/item/device/flash,
-			/obj/item/device/hailer,
-			/obj/item/clothing/accessory/badge/holo/hos,
-			/obj/item/clothing/accessory/holster/waist,
-			/obj/item/weapon/melee/telebaton,
-			/obj/item/weapon/shield/riot/tele,
-			/obj/item/clothing/head/beret/sec/corporate/hos,
-			/obj/item/device/flashlight/maglight
-			)
-	cost = 50
-	containertype = "/obj/structure/closet/crate/secure"
-	containername = "Head of security equipment"
-	access = access_hos
-
-/datum/supply_packs/security/securityclothing
-	name = "Security uniform crate"
-	contains = list(
-			/obj/item/weapon/storage/backpack/satchel/sec = 2,
-			/obj/item/weapon/storage/backpack/security = 2,
-			/obj/item/clothing/accessory/armband = 4,
-			/obj/item/clothing/under/rank/security = 4,
-			/obj/item/clothing/under/rank/security2 = 4,
-			/obj/item/clothing/under/rank/warden,
-			/obj/item/clothing/under/rank/head_of_security,
-			/obj/item/clothing/suit/armor/secchief/jensen,
-			/obj/item/clothing/head/soft/sec = 4,
-			/obj/item/clothing/gloves/black = 4,
-			/obj/item/weapon/storage/box/holobadge
-			)
-	cost = 10
-	containertype = "/obj/structure/closet/crate/secure"
-	containername = "Security uniform crate"
-
-/datum/supply_packs/security/navybluesecurityclothing
-	name = "Navy blue security uniform crate"
-	contains = list(
-			/obj/item/weapon/storage/backpack/satchel/sec = 2,
-			/obj/item/weapon/storage/backpack/security = 2,
-			/obj/item/clothing/under/rank/security/navyblue = 4,
-			/obj/item/clothing/suit/security/navyofficer = 4,
-			/obj/item/clothing/under/rank/warden/navyblue,
-			/obj/item/clothing/suit/security/navywarden,
-			/obj/item/clothing/under/rank/head_of_security/navyblue,
-			/obj/item/clothing/suit/security/navyhos,
-			/obj/item/clothing/head/beret/sec/navy/officer = 4,
-			/obj/item/clothing/head/beret/sec/navy/warden,
-			/obj/item/clothing/head/beret/sec/navy/hos,
-			/obj/item/clothing/gloves/black = 4,
-			/obj/item/weapon/storage/box/holobadge
-			)
-	cost = 10
-	containertype = "/obj/structure/closet/crate/secure"
-	containername = "Navy blue security uniform crate"
-
-/datum/supply_packs/security/corporatesecurityclothing
-	name = "Corporate security uniform crate"
-	contains = list(
-			/obj/item/weapon/storage/backpack/satchel/sec = 2,
-			/obj/item/weapon/storage/backpack/security = 2,
-			/obj/item/clothing/under/rank/security/corp = 4,
-			/obj/item/clothing/head/soft/sec/corp = 4,
-			/obj/item/clothing/under/rank/warden/corp,
-			/obj/item/clothing/under/rank/head_of_security/corp,
-			/obj/item/clothing/head/beret/sec = 4,
-			/obj/item/clothing/head/beret/sec/corporate/warden,
-			/obj/item/clothing/head/beret/sec/corporate/hos,
-			/obj/item/clothing/under/det/corporate = 2,
-			/obj/item/clothing/gloves/black = 4,
-			/obj/item/weapon/storage/box/holobadge
-			)
-	cost = 10
-	containertype = "/obj/structure/closet/crate/secure"
-	containername = "Corporate security uniform crate"
 
 /datum/supply_packs/security/biosuit
 	name = "Security biohazard gear"
