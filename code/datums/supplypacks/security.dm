@@ -245,15 +245,14 @@
 	containername = "Officer equipment"
 	access = access_brig
 
-/datum/supply_packs/security/wardengear
-	name = "Warden equipment"
+/datum/supply_packs/security/overseergear
+	name = "Overseer equipment"
 	contains = list(
 			/obj/item/clothing/suit/storage/vest/warden,
 			/obj/item/clothing/under/rank/warden,
 			/obj/item/clothing/under/rank/warden/corp,
-			/obj/item/clothing/suit/armor/vest/warden,
-			/obj/item/clothing/suit/armor/vest/warden/alt,
-			/obj/item/clothing/head/helmet/warden,
+			/obj/item/clothing/suit/armor/vest/overseer,
+			/obj/item/clothing/head/helmet/overseer,
 			/obj/item/weapon/cartridge/security,
 			/obj/item/device/radio/headset/headset_sec,
 			/obj/item/clothing/glasses/sunglasses/sechud,
@@ -276,11 +275,11 @@
 /datum/supply_packs/security/headofsecgear
 	name = "Head of security equipment"
 	contains = list(
-			/obj/item/clothing/head/helmet/HoS,
+			/obj/item/clothing/head/helmet/secchief,
 			/obj/item/clothing/suit/storage/vest/hos,
 			/obj/item/clothing/under/rank/head_of_security/corp,
-			/obj/item/clothing/suit/armor/hos,
-			/obj/item/clothing/head/helmet/HoS/dermal,
+			/obj/item/clothing/suit/armor/secchief,
+			/obj/item/clothing/head/helmet/secchief/dermal,
 			/obj/item/weapon/cartridge/hos,
 			/obj/item/device/radio/headset/heads/hos,
 			/obj/item/clothing/glasses/sunglasses/sechud,
@@ -309,7 +308,7 @@
 			/obj/item/clothing/under/rank/security2 = 4,
 			/obj/item/clothing/under/rank/warden,
 			/obj/item/clothing/under/rank/head_of_security,
-			/obj/item/clothing/suit/armor/hos/jensen,
+			/obj/item/clothing/suit/armor/secchief/jensen,
 			/obj/item/clothing/head/soft/sec = 4,
 			/obj/item/clothing/gloves/black = 4,
 			/obj/item/weapon/storage/box/holobadge
