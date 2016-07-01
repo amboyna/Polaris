@@ -42,16 +42,24 @@
 
 /datum/species/unathi
 	autohiss_basic_map = list(
-			"s" = list("ss", "sss", "ssss")
+			"s" = list("ss", "sss", "ssss"),
+			"ס" = list("סס", "סס-ס", "סססס"),
+			"ר" = list("רר", "רר-ר", "רררר")
 		)
 	autohiss_extra_map = list(
-			"x" = list("ks", "kss", "ksss")
+			"x" = list("ks", "kss", "ksss"),
+			"ק" = list("ר"),
+			"ך" = list("ץ")
 		)
 	autohiss_exempt = list("Sinta'unathi")
 
 /datum/species/tajaran
 	autohiss_basic_map = list(
-			"r" = list("rr", "rrr", "rrrr")
+			"r" = list("rr", "rrr", "rrrr"),
+			"נ" = list("ננ", "ננ-נ", "ננננ")
+		)
+	autohiss_extra_map = list(
+			"ג" = list("פ")
 		)
 	autohiss_exempt = list("Siik'tajr")
 
