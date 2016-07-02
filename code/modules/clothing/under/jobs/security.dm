@@ -9,27 +9,37 @@
  * Security
  */
 /obj/item/clothing/under/rank/warden
-	desc = "It's made of a slightly sturdier material than standard jumpsuits, to allow for more robust protection. It has the word \"Warden\" written on the shoulders."
-	name = "warden's jumpsuit"
-	icon_state = "warden"
-	item_state = "r_suit"
-	worn_state = "warden"
+	desc = "It's made of a slightly sturdier material than standard jumpsuits, to allow for more robust protection. It has the word \"Overseer\" written on the shoulders."
+	name = "overseer's jumpsuit"
+	icon_state = "overseeruniform"
+	item_state = "bl_suit"
+	worn_state = "overseeruniform"
 	armor = list(melee = 10, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
 	siemens_coefficient = 0.9
 	rolled_sleeves = 0
 
-/obj/item/clothing/head/helmet/warden
-	name = "warden's hat"
-	desc = "It's a special helmet issued to the Warden of a securiy force."
-	icon_state = "policehelm"
+/obj/item/clothing/head/helmet/overseer
+	name = "overseer's hat"
+	desc = "It's a special cap issued to the Overseer of a securiy force."
+	icon_state = "overseercap"
 	body_parts_covered = 0
 
-/obj/item/clothing/under/rank/security
-	name = "security officer's jumpsuit"
+/obj/item/clothing/under/rank/constable
+	name = "constable's uniform"
 	desc = "It's made of a slightly sturdier material than standard jumpsuits, to allow for robust protection."
-	icon_state = "security"
-	item_state = "r_suit"
-	worn_state = "secred"
+	icon_state = "constableuniform"
+	item_state = "bl_suit"
+	worn_state = "constableuniform"
+	armor = list(melee = 10, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
+	siemens_coefficient = 0.9
+	rolled_sleeves = 0
+
+/obj/item/clothing/under/rank/seniorconstable
+	name = "senior constable's uniform"
+	desc = "It's made of a slightly sturdier material than standard jumpsuits, to allow for robust protection."
+	icon_state = "seniorconstableuniform"
+	item_state = "bl_suit"
+	worn_state = "seniorconstableuniform"
 	armor = list(melee = 10, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
 	siemens_coefficient = 0.9
 	rolled_sleeves = 0
@@ -48,7 +58,7 @@
 	name = "security officer's uniform"
 	desc = "It's made of a slightly sturdier material, to allow for robust protection."
 	icon_state = "redshirt2"
-	item_state = "r_suit"
+	item_state = "bl_suit"
 	worn_state = "redshirt2"
 	armor = list(melee = 10, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
 	siemens_coefficient = 0.9
@@ -154,11 +164,11 @@
  * Head of Security
  */
 /obj/item/clothing/under/rank/head_of_security
-	desc = "It's a jumpsuit worn by those few with the dedication to achieve the position of \"Head of Security\". It has additional armor to protect the wearer."
-	name = "head of security's jumpsuit"
-	icon_state = "hos"
-	item_state = "r_suit"
-	worn_state = "hosred"
+	desc = "It's a jumpsuit worn by those few with the dedication to achieve the position of \"Security Chief\". It has additional armor to protect the wearer."
+	name = "security chief's jumpsuit"
+	icon_state = "secchiefuniform"
+	item_state = "bl_suit"
+	worn_state = "secchiefuniform"
 	armor = list(melee = 10, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
 	siemens_coefficient = 0.8
 	rolled_sleeves = 0
@@ -169,24 +179,24 @@
 	worn_state = "hos_corporate"
 	rolled_sleeves = 0
 
-/obj/item/clothing/head/helmet/HoS
-	name = "Head of Security Hat"
-	desc = "The hat of the Head of Security. For showing the officers who's in charge."
-	icon_state = "hoscap"
+/obj/item/clothing/head/helmet/secchief
+	name = "Security Chief's Hat"
+	desc = "The hat of the Security Chief. For showing the constables who's in charge."
+	icon_state = "secchiefcap"
 	body_parts_covered = 0
 	siemens_coefficient = 0.8
 
-/obj/item/clothing/head/helmet/HoS/dermal
+/obj/item/clothing/head/helmet/secchief/dermal
 	name = "Dermal Armour Patch"
 	desc = "You're not quite sure how you manage to take it on and off, but it implants nicely in your head."
 	icon_state = "dermal"
 	siemens_coefficient = 0.6
 
-/obj/item/clothing/suit/armor/hos
-	name = "armored coat"
-	desc = "A greatcoat enhanced with a special alloy for some protection and style."
-	icon_state = "hos"
-	item_state = "hos"
+/obj/item/clothing/suit/armor/secchief
+	name = "armored overcoat"
+	desc = "An overcoat enhanced with a special alloy for some protection and style."
+	icon_state = "secchiefcoat"
+	item_state = "secchiefcoat"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	armor = list(melee = 65, bullet = 30, laser = 50, energy = 10, bomb = 25, bio = 0, rad = 0)
 	flags_inv = HIDEJUMPSUIT
@@ -202,7 +212,7 @@
 	siemens_coefficient = 0.6
 	rolled_sleeves = -1
 
-/obj/item/clothing/suit/armor/hos/jensen
+/obj/item/clothing/suit/armor/secchief/jensen
 	name = "armored trenchcoat"
 	desc = "A trenchcoat augmented with a special alloy for some protection and style."
 	icon_state = "hostrench"

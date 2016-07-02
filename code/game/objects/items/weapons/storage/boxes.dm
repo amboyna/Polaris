@@ -217,6 +217,16 @@
 	for(var/i = 1 to 7)
 		new /obj/item/weapon/grenade/flashbang(src)
 
+/obj/item/weapon/storage/box/teargas
+	name = "box of teargas grenades (WARNING)"
+	desc = "<B>WARNING: These devices are extremely dangerous and can cause blindness in repeated use.</B>"
+	icon_state = "flashbang"
+
+/obj/item/weapon/storage/box/teargas/New()
+	..()
+	for(var/i = 1 to 7)
+		new /obj/item/weapon/grenade/chem_grenade/teargas(src)
+
 /obj/item/weapon/storage/box/emps
 	name = "box of emp grenades"
 	desc = "A box containing 5 military grade EMP grenades.<br> WARNING: Do not use near unshielded electronics or biomechanical augmentations, death or permanent paralysis may occur."

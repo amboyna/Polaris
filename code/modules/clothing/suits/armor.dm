@@ -41,20 +41,12 @@
 	icon_state = "armorsec"
 	item_state = "armor"
 
-/obj/item/clothing/suit/armor/vest/warden
-	name = "Warden's jacket"
-	desc = "An armoured jacket with silver rank pips and livery."
-	icon_state = "warden_jacket"
-	item_state = "armor"
+/obj/item/clothing/suit/armor/vest/overseer
+	name = "overseer's overcoat"
+	desc = "An overcoat with some armor. Perfect for NKVD basements, isn't it?"
+	icon_state = "overseercoat"
+	item_state = "overseercoat"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
-
-/obj/item/clothing/suit/armor/vest/warden/alt
-	name = "Warden's jacket"
-	desc = "An armoured jacket with silver rank pips and livery."
-	icon_state = "warden_alt"
-	item_state = "warden_alt"
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
-
 
 /obj/item/clothing/suit/armor/riot
 	name = "riot vest"
@@ -275,45 +267,30 @@
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE
 	siemens_coefficient = 0.6
 
-/obj/item/clothing/suit/storage/vest/officer
-	name = "officer armor vest"
-	desc = "A simple kevlar plate carrier. This one has a security holobadge clipped to the chest."
-	icon_state = "officervest_nobadge"
-	item_state = "officervest_nobadge"
-	icon_badge = "officervest_badge"
-	icon_nobadge = "officervest_nobadge"
+/obj/item/clothing/suit/storage/vest/constable
+	name = "constable's armor vest"
+	desc = "A simple kevlar plate carrier. This one has a security badge clipped to the chest."
+	icon_state = "constablevest"
+	item_state = "constablevest"
+	armor = list(melee = 30, bullet = 25, laser = 25, energy = 10, bomb = 10, bio = 0, rad = 0)
 
-/obj/item/clothing/suit/storage/vest/warden
-	name = "warden armor vest"
-	desc = "A simple kevlar plate carrier. This one has a silver badge clipped to the chest."
-	icon_state = "wardenvest_nobadge"
-	item_state = "wardenvest_nobadge"
-	icon_badge = "wardenvest_badge"
-	icon_nobadge = "wardenvest_nobadge"
+/obj/item/clothing/suit/storage/vest/seniorconstable
+	name = "senior constable's armor vest"
+	desc = "A simple kevlar plate carrier. This one has a security badge clipped to the chest."
+	icon_state = "seniorconstablevest"
+	item_state = "seniorconstablevest"
 
-/obj/item/clothing/suit/storage/vest/hos
-	name = "head of security armor vest"
+/obj/item/clothing/suit/storage/vest/overseer
+	name = "overseer armor vest"
+	desc = "A simple kevlar plate carrier. This one has a red badge clipped to the chest."
+	icon_state = "overseervest"
+	item_state = "overseervest"
+
+/obj/item/clothing/suit/storage/vest/secchief
+	name = "security chief armor vest"
 	desc = "A simple kevlar plate carrier. This one has a gold badge clipped to the chest."
-	icon_state = "hosvest_nobadge"
-	item_state = "hosvest_nobadge"
-	icon_badge = "hosvest_badge"
-	icon_nobadge = "hosvest_nobadge"
-
-/obj/item/clothing/suit/storage/vest/pcrc
-	name = "PCRC armor vest"
-	desc = "A simple kevlar plate carrier belonging to Proxima Centauri Risk Control. This one has a PCRC crest clipped to the chest."
-	icon_state = "pcrcvest_nobadge"
-	item_state = "pcrcvest_nobadge"
-	icon_badge = "pcrcvest_badge"
-	icon_nobadge = "pcrcvest_nobadge"
-
-/obj/item/clothing/suit/storage/vest/detective
-	name = "detective armor vest"
-	desc = "A simple kevlar plate carrier in a vintage brown, it has a badge clipped to the chest that reads, 'Private investigator'."
-	icon_state = "detectivevest_nobadge"
-	item_state = "detectivevest_nobadge"
-	icon_badge = "detectivevest_badge"
-	icon_nobadge = "detectivevest_nobadge"
+	icon_state = "secchiefvest"
+	item_state = "secchiefvest"
 
 /obj/item/clothing/suit/storage/vest/heavy
 	name = "heavy armor vest"
@@ -322,38 +299,6 @@
 	item_state = "webvest"
 	armor = list(melee = 50, bullet = 40, laser = 40, energy = 25, bomb = 25, bio = 0, rad = 0)
 	slowdown = 1
-
-/obj/item/clothing/suit/storage/vest/heavy/officer
-	name = "officer heavy armor vest"
-	desc = "A heavy kevlar plate carrier with webbing attached. This one has a security holobadge clipped to the chest."
-	icon_state = "officerwebvest_nobadge"
-	item_state = "officerwebvest_nobadge"
-	icon_badge = "officerwebvest_badge"
-	icon_nobadge = "officerwebvest_nobadge"
-
-/obj/item/clothing/suit/storage/vest/heavy/warden
-	name = "warden heavy armor vest"
-	desc = "A heavy kevlar plate carrier with webbing attached. This one has a silver badge clipped to the chest."
-	icon_state = "wardenwebvest_nobadge"
-	item_state = "wardenwebvest_nobadge"
-	icon_badge = "wardenwebvest_badge"
-	icon_nobadge = "wardenwebvest_nobadge"
-
-/obj/item/clothing/suit/storage/vest/heavy/hos
-	name = "head of security heavy armor vest"
-	desc = "A heavy kevlar plate carrier with webbing attached. This one has a gold badge clipped to the chest."
-	icon_state = "hoswebvest_nobadge"
-	item_state = "hoswebvest_nobadge"
-	icon_badge = "hoswebvest_badge"
-	icon_nobadge = "hoswebvest_nobadge"
-
-/obj/item/clothing/suit/storage/vest/heavy/pcrc
-	name = "PCRC heavy armor vest"
-	desc = "A heavy kevlar plate carrier belonging to Proxima Centauri Risk Control with webbing attached. This one has a PCRC crest clipped to the chest."
-	icon_state = "pcrcwebvest_nobadge"
-	item_state = "pcrcwebvest_nobadge"
-	icon_badge = "pcrcwebvest_badge"
-	icon_nobadge = "pcrcwebvest_nobadge"
 
 //Provides the protection of a merc voidsuit, but only covers the chest/groin, and also takes up a suit slot. In exchange it has no slowdown and provides storage.
 /obj/item/clothing/suit/storage/vest/heavy/merc

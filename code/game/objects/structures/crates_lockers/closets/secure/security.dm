@@ -42,7 +42,7 @@
 		new /obj/item/device/radio/headset/heads/hop(src)
 		new /obj/item/device/radio/headset/heads/hop/alt(src)
 		new /obj/item/weapon/storage/box/ids(src)
-		new /obj/item/weapon/storage/box/ids( src )
+		new /obj/item/weapon/storage/box/ids(src)
 		new /obj/item/weapon/gun/energy/gun(src)
 		new /obj/item/weapon/gun/projectile/sec/flash(src)
 		new /obj/item/device/flash(src)
@@ -80,14 +80,14 @@
 
 
 /obj/structure/closet/secure_closet/hos
-	name = "head of security's locker"
+	name = "security chief's locker"
 	req_access = list(access_hos)
-	icon_state = "hossecure1"
-	icon_closed = "hossecure"
-	icon_locked = "hossecure1"
-	icon_opened = "hossecureopen"
-	icon_broken = "hossecurebroken"
-	icon_off = "hossecureoff"
+	icon_state = "securesecchief1"
+	icon_closed = "securesecchief"
+	icon_locked = "securesecchief1"
+	icon_opened = "securesecchiefopen"
+	icon_broken = "securesecchiefbroken"
+	icon_off = "securesecchiefoff"
 	storage_capacity = 2.5 * MOB_MEDIUM
 
 	New()
@@ -98,21 +98,15 @@
 			new /obj/item/weapon/storage/backpack/satchel/sec(src)
 		if(prob(50))
 			new /obj/item/weapon/storage/backpack/dufflebag/sec(src)
-		new /obj/item/clothing/head/helmet/HoS(src)
-		new /obj/item/clothing/suit/storage/vest/hos(src)
-		new /obj/item/clothing/under/rank/head_of_security/jensen(src)
-		new /obj/item/clothing/under/rank/head_of_security/corp(src)
-		new /obj/item/clothing/suit/armor/hos/jensen(src)
-		new /obj/item/clothing/suit/armor/hos(src)
-		new /obj/item/clothing/head/helmet/HoS/dermal(src)
+		new /obj/item/clothing/head/helmet/secchief(src)
+		new /obj/item/clothing/suit/storage/vest/secchief(src)
+		new /obj/item/clothing/suit/armor/secchief(src)
+		new /obj/item/clothing/head/helmet/secchief/dermal(src)
 		new /obj/item/weapon/cartridge/hos(src)
 		new /obj/item/device/radio/headset/heads/hos(src)
 		new /obj/item/device/radio/headset/heads/hos/alt(src)
-		new /obj/item/clothing/glasses/sunglasses/sechud(src)
 		new /obj/item/taperoll/police(src)
-		new /obj/item/weapon/shield/riot(src)
 		new /obj/item/weapon/shield/riot/tele(src)
-		new /obj/item/weapon/storage/box/holobadge/hos(src)
 		new /obj/item/clothing/accessory/badge/holo/hos(src)
 		new /obj/item/weapon/storage/box/flashbangs(src)
 		new /obj/item/weapon/storage/belt/security(src)
@@ -120,7 +114,6 @@
 		new /obj/item/weapon/melee/baton/loaded(src)
 		new /obj/item/weapon/gun/energy/gun(src)
 		new /obj/item/clothing/accessory/holster/waist(src)
-		new /obj/item/weapon/melee/telebaton(src)
 		new /obj/item/clothing/head/beret/sec/corporate/hos(src)
 		new /obj/item/clothing/suit/storage/hooded/wintercoat/security(src)
 		new /obj/item/device/flashlight/maglight(src)
@@ -129,14 +122,14 @@
 
 
 /obj/structure/closet/secure_closet/warden
-	name = "warden's locker"
+	name = "overseer's locker"
 	req_access = list(access_armory)
-	icon_state = "wardensecure1"
-	icon_closed = "wardensecure"
-	icon_locked = "wardensecure1"
-	icon_opened = "wardensecureopen"
-	icon_broken = "wardensecurebroken"
-	icon_off = "wardensecureoff"
+	icon_state = "secureoverseer1"
+	icon_closed = "secureoverseer"
+	icon_locked = "secureoverseer1"
+	icon_opened = "secureoverseeropen"
+	icon_broken = "secureoverseerbroken"
+	icon_off = "secureoverseeroff"
 
 
 	New()
@@ -147,16 +140,12 @@
 			new /obj/item/weapon/storage/backpack/satchel/sec(src)
 		if(prob(50))
 			new /obj/item/weapon/storage/backpack/dufflebag/sec(src)
-		new /obj/item/clothing/suit/storage/vest/warden(src)
+		new /obj/item/clothing/suit/storage/vest/overseer(src)
 		new /obj/item/clothing/under/rank/warden(src)
-		new /obj/item/clothing/under/rank/warden/corp(src)
-		new /obj/item/clothing/suit/armor/vest/warden(src)
-		new /obj/item/clothing/suit/armor/vest/warden/alt(src)
-		new /obj/item/clothing/head/helmet/warden(src)
+		new /obj/item/clothing/suit/armor/vest/overseer(src)
+		new /obj/item/clothing/head/helmet/overseer(src)
 		new /obj/item/weapon/cartridge/security(src)
-		new /obj/item/device/radio/headset/headset_sec(src)
 		new /obj/item/device/radio/headset/headset_sec/alt(src)
-		new /obj/item/clothing/glasses/sunglasses/sechud(src)
 		new /obj/item/taperoll/police(src)
 		new /obj/item/clothing/accessory/badge/holo/warden(src)
 		new /obj/item/weapon/storage/box/flashbangs(src)
@@ -165,23 +154,21 @@
 		new /obj/item/weapon/melee/baton/loaded(src)
 		new /obj/item/weapon/gun/energy/gun(src)
 		new /obj/item/weapon/storage/box/holobadge(src)
-		new /obj/item/clothing/head/beret/sec/corporate/warden(src)
 		new /obj/item/clothing/suit/storage/hooded/wintercoat/security(src)
 		new /obj/item/device/flashlight/maglight(src)
 		new /obj/item/device/megaphone(src)
 		return
 
 
-
-/obj/structure/closet/secure_closet/security
-	name = "security officer's locker"
+/obj/structure/closet/secure_closet/seniorsecurity
+	name = "senior constable's locker"
 	req_access = list(access_brig)
-	icon_state = "sec1"
-	icon_closed = "sec"
-	icon_locked = "sec1"
-	icon_opened = "secopen"
-	icon_broken = "secbroken"
-	icon_off = "secoff"
+	icon_state = "secureseniorconstable1"
+	icon_closed = "secureseniorconstable"
+	icon_locked = "secureseniorconstable1"
+	icon_opened = "secureseniorconstableopen"
+	icon_broken = "secureseniorconstablebroken"
+	icon_off = "secureseniorconstableoff"
 
 	New()
 		..()
@@ -191,26 +178,54 @@
 			new /obj/item/weapon/storage/backpack/satchel/sec(src)
 		if(prob(50))
 			new /obj/item/weapon/storage/backpack/dufflebag/sec(src)
-		new /obj/item/clothing/suit/storage/vest/officer(src)
-		new /obj/item/clothing/head/helmet(src)
+		new /obj/item/clothing/suit/storage/vest/seniorconstable(src)
 		new /obj/item/weapon/cartridge/security(src)
-		new /obj/item/device/radio/headset/headset_sec(src)
 		new /obj/item/device/radio/headset/headset_sec/alt(src)
 		new /obj/item/weapon/storage/belt/security(src)
 		new /obj/item/device/flash(src)
 		new /obj/item/weapon/reagent_containers/spray/pepper(src)
 		new /obj/item/weapon/grenade/flashbang(src)
-		new /obj/item/weapon/melee/baton/loaded(src)
-		new /obj/item/clothing/glasses/sunglasses/sechud(src)
 		new /obj/item/taperoll/police(src)
 		new /obj/item/device/hailer(src)
 		new /obj/item/device/flashlight/flare(src)
 		new /obj/item/clothing/accessory/storage/black_vest(src)
-		new /obj/item/clothing/head/soft/sec/corp(src)
-		new /obj/item/clothing/under/rank/security/corp(src)
-		new /obj/item/ammo_magazine/c45m/rubber(src)
-		new /obj/item/weapon/gun/energy/taser(src)
+		new /obj/item/clothing/under/rank/seniorconstable(src)
 		new /obj/item/clothing/suit/storage/hooded/wintercoat/security(src)
+		new /obj/item/device/flashlight/maglight(src)
+		return
+
+
+/obj/structure/closet/secure_closet/security
+	name = "constable's locker"
+	req_access = list(access_brig)
+	icon_state = "secureconstable1"
+	icon_closed = "secureconstable"
+	icon_locked = "secureconstable1"
+	icon_opened = "secureconstableopen"
+	icon_broken = "secureconstablebroken"
+	icon_off = "secureconstableoff"
+
+	New()
+		..()
+		if(prob(50))
+			new /obj/item/weapon/storage/backpack/security(src)
+		else
+			new /obj/item/weapon/storage/backpack/satchel/sec(src)
+		if(prob(50))
+			new /obj/item/weapon/storage/backpack/dufflebag/sec(src)
+		new /obj/item/clothing/suit/storage/vest/constable(src)
+		new /obj/item/weapon/cartridge/security(src)
+		new /obj/item/device/radio/headset/headset_sec(src)
+		new /obj/item/weapon/storage/belt/security(src)
+		new /obj/item/device/flash(src)
+		new /obj/item/weapon/reagent_containers/spray/pepper(src)
+		new /obj/item/weapon/grenade/chem_grenade/teargas(src)
+		new /obj/item/taperoll/police(src)
+		new /obj/item/device/hailer(src)
+		new /obj/item/device/flashlight/flare(src)
+		new /obj/item/clothing/accessory/storage/black_vest(src)
+		new /obj/item/clothing/suit/storage/hooded/wintercoat/security(src)
+		new /obj/item/clothing/under/rank/constable(src)
 		new /obj/item/device/flashlight/maglight(src)
 		return
 
@@ -266,7 +281,7 @@
 		new /obj/item/weapon/storage/box/evidence(src)
 		new /obj/item/device/radio/headset/headset_sec(src)
 		new /obj/item/device/radio/headset/headset_sec/alt(src)
-		new /obj/item/clothing/suit/storage/vest/detective(src)
+		new /obj/item/clothing/suit/armor/det_suit(src)
 		new /obj/item/ammo_magazine/c45m/rubber(src)
 		new /obj/item/ammo_magazine/c45m/rubber(src)
 		new /obj/item/taperoll/police(src)
