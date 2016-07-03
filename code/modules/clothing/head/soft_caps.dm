@@ -71,9 +71,9 @@
 	icon_state = "rainbowsoft"
 
 /obj/item/clothing/head/soft/sec
-	name = "security cap"
-	desc = "It's a field cap in tasteful red color."
-	icon_state = "secsoft"
+	name = "field cap"
+	desc = "It's a field cap in tasteful dark navy color. That's a NT insignia on it"
+	icon_state = "constablecap"
 
 /obj/item/clothing/head/soft/sec/corp
 	name = "corporate security cap"

@@ -102,6 +102,11 @@
 	desc = "A white beret adorned with a blue patch. Worn by NanoTrasen command staff."
 	icon_state = "beret_centcom_captain"
 
+/obj/item/clothing/head/constableforagecap
+	name = "forage cap"
+	desc = "That's a forage cap with a NT insignia on it."
+	icon_state = "constableforagecap"
+
 //Medical
 /obj/item/clothing/head/surgery
 	name = "surgical cap"
