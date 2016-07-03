@@ -36,6 +36,10 @@
 	num_alternate_languages = 2
 	secondary_langs = list("Sinta'unathi")
 	name_language = "Sinta'unathi"
+	restricted_jobs = list("Captain", "Head of Personnel", "Head of Security", "Chief Engineer",\
+						"Research Director", "Chief Medical Officer", "Detective",\
+						"Medical Doctor", "Geneticist", "Chemist", "Scientist", "Roboticist",\
+						"Xenobiologist", "Quartermaster", "Internal Affairs Agent")
 
 	min_age = 18
 	max_age = 60
@@ -96,6 +100,10 @@
 	num_alternate_languages = 2
 	secondary_langs = list("Siik'tajr")
 	name_language = "Siik'tajr"
+	restricted_jobs = list("Captain", "Head of Personnel", "Head of Security", "Chief Engineer",\
+						"Research Director", "Chief Medical Officer", "Warden", "Detective", "Security Officer",\
+						"Medical Doctor", "Geneticist", "Scientist", "Roboticist", "Xenobiologist",\
+						"Quartermaster", "Internal Affairs Agent")
 
 	min_age = 17
 	max_age = 80
@@ -151,6 +159,10 @@
 	num_alternate_languages = 2
 	secondary_langs = list("Skrellian", "Schechi")
 	name_language = "Skrellian"
+	restricted_jobs = list("Captain", "Head of Personnel", "Head of Security", "Chief Engineer", "Warden",\
+						"Detective", "Security Officer", "Station Engineer", "Atmospheric Technician",\
+						"Quartermaster", "Cargo Technician", "Shaft Miner")
+
 
 	min_age = 19
 	max_age = 80
@@ -193,6 +205,11 @@
 	show_ssd = "completely quiescent"
 	num_alternate_languages = 1
 	name_language = "Rootspeak"
+	restricted_jobs = list("Captain", "Head of Personnel", "Head of Security", "Chief Engineer",\
+						"Research Director", "Chief Medical Officer", "Warden", "Detective", "Security Officer",\
+						"Station Engineer", "Atmospheric Technician", "Medical Doctor", "Geneticist", "Paramedic",\
+						"Scientist", "Roboticist", "Bartender", "Quartermaster", "Internal Affairs Agent")
+
 
 	min_age = 1
 	max_age = 300

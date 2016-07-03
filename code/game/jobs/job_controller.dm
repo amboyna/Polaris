@@ -57,6 +57,8 @@ var/global/datum/controller/occupations/job_master
 				return 0
 			if(!job.player_old_enough(player.client))
 				return 0
+			if(player.IsJobRestricted(rank))
+				return
 
 			var/position_limit = job.total_positions
 			if(!latejoin)
@@ -84,6 +86,9 @@ var/global/datum/controller/occupations/job_master
 		for(var/mob/new_player/player in unassigned)
 			if(jobban_isbanned(player, job.title))
 				Debug("FOC isbanned failed, Player: [player]")
+				continue
+			if(player.IsJobRestricted(job.title))
+				Debug("FOC IsJobRestricted failed, Player: [player]")
 				continue
 			if(!job.player_old_enough(player.client))
 				Debug("FOC player not old enough, Player: [player]")
@@ -116,6 +121,10 @@ var/global/datum/controller/occupations/job_master
 
 			if(jobban_isbanned(player, job.title))
 				Debug("GRJ isbanned failed, Player: [player], Job: [job.title]")
+				continue
+
+			if(player.IsJobRestricted(job.title))
+				Debug("GRJ IsJobRestricted failed, Player: [player]")
 				continue
 
 			if(!job.player_old_enough(player.client))
@@ -261,6 +270,10 @@ var/global/datum/controller/occupations/job_master
 
 					if(jobban_isbanned(player, job.title))
 						Debug("DO isbanned failed, Player: [player], Job:[job.title]")
+						continue
+
+					if(player.IsJobRestricted(job.title))
+						Debug("DO IsJobRestricted failed, Player: [player]")
 						continue
 
 					if(!job.player_old_enough(player.client))

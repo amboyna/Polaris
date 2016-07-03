@@ -181,6 +181,11 @@ datum/preferences
 		if(24 to 1000)
 			return "God"
 
+/datum/preferences/proc/IsJobRestricted(rank)
+	var/datum/species/PS = all_species[species]
+	if(rank in PS.restricted_jobs) return 1
+	return 0
+
 /datum/preferences/proc/ShowChoices(mob/user)
 	if(!user || !user.client)	return
 
@@ -258,7 +263,7 @@ datum/preferences
 	if(be_random_name)
 		real_name = random_name(identifying_gender,species)
 
-	// Ask the preferences datums to apply their own settings to the new mob 
+	// Ask the preferences datums to apply their own settings to the new mob
 	player_setup.copy_to_mob(character)
 
 	if(icon_updates)
