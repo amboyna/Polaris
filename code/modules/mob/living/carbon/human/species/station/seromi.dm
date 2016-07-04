@@ -84,8 +84,10 @@
 		/datum/unarmed_attack/stomp/weak
 		)
 
+/*
 	var/shock_cap = 30
 	var/hallucination_cap = 25
+
 
 // I'm... so... ronrery, so ronery...
 /datum/species/teshari/handle_environment_special(var/mob/living/carbon/human/H)
@@ -117,6 +119,7 @@
 	else
 		return SEE_SELF
 
+*/
 /datum/species/teshari/equip_survival_gear(var/mob/living/carbon/human/H)
 	..()
 	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/sandal(H),slot_shoes)
